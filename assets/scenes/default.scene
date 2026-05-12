@@ -1,0 +1,89 @@
+Environment:
+  ClearColor:
+    - 0.12
+    - 0.14
+    - 0.17
+    - 1
+  AmbientLight:
+    - 0.24
+    - 0.26
+    - 0.32
+    - 1
+  AmbientLightIntensity: 1
+  PostProcessAsset:
+    path: assets/defaults/postprocess/default.postprocess
+Entities:
+  - Entity: 1000000000000000001
+    Name: Camera
+    Tag: MainCamera
+    Canis::Transform:
+      active: true
+      position:
+        - 0
+        - 6
+        - 14
+      rotation:
+        - -0.38
+        - 0
+        - 0
+      scale:
+        - 1
+        - 1
+        - 1
+      parent: 0
+      children: []
+    Canis::Camera:
+      primary: true
+      fovDegrees: 60
+      nearClip: 0.1
+      farClip: 300
+  - Entity: 1000000000000000002
+    Name: Directional Light
+    Tag: ""
+    Canis::DirectionalLight:
+      enabled: true
+      color:
+        - 1
+        - 1
+        - 1
+        - 1
+      intensity: 1
+      direction:
+        - -0.4
+        - -1
+        - -0.25
+  - Entity: 1000000000000000003
+    Name: Cube
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position:
+        - 0
+        - 0
+        - 0
+      rotation:
+        - 0
+        - 0
+        - 0
+      scale:
+        - 1
+        - 1
+        - 1
+      parent: 0
+      children: []
+    Canis::Material:
+      color:
+        - 1
+        - 1
+        - 1
+        - 1
+      MaterialAsset:
+        path: assets/defaults/materials/default.material
+    Canis::Model:
+      color:
+        - 1
+        - 1
+        - 1
+        - 1
+      ModelAsset:
+        path: assets/defaults/models/cube.glb
