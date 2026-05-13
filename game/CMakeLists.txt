@@ -1,0 +1,87 @@
+set(GAME_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/game")
+message(STATUS "GAME_INCLUDE_DIRS ${GAME_INCLUDE_DIRS}")
+
+set(GENERATED_REGISTER_SCRIPTS_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/include/RegisterScripts.generated.hpp")
+set(GENERATE_REGISTER_SCRIPTS_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/cmake/GenerateRegisterScripts.cmake")
+
+file(GLOB_RECURSE REGISTER_SCRIPT_HEADERS
+    CONFIGURE_DEPENDS
+    RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp"
+)
+list(REMOVE_ITEM REGISTER_SCRIPT_HEADERS "RegisterScripts.generated.hpp")
+
+set(REGISTER_SCRIPT_HEADER_PATHS "")
+foreach(script_header IN LISTS REGISTER_SCRIPT_HEADERS)
+    list(APPEND REGISTER_SCRIPT_HEADER_PATHS "${CMAKE_CURRENT_SOURCE_DIR}/include/${script_header}")
+endforeach()
+
+list(SORT REGISTER_SCRIPT_HEADER_PATHS)
+string(JOIN "||" REGISTER_SCRIPT_HEADER_PATHS_ARG ${REGISTER_SCRIPT_HEADER_PATHS})
+
+add_custom_command(
+    OUTPUT "${GENERATED_REGISTER_SCRIPTS_HEADER}"
+    COMMAND ${CMAKE_COMMAND}
+        -DOUTPUT_FILE=${GENERATED_REGISTER_SCRIPTS_HEADER}
+        -DINCLUDE_ROOT=${CMAKE_CURRENT_SOURCE_DIR}/include
+        -DHEADER_PATHS=${REGISTER_SCRIPT_HEADER_PATHS_ARG}
+        -P ${GENERATE_REGISTER_SCRIPTS_SCRIPT}
+    DEPENDS
+        "${GENERATE_REGISTER_SCRIPTS_SCRIPT}"
+        ${REGISTER_SCRIPT_HEADER_PATHS}
+    VERBATIM
+)
+
+add_custom_target(GenerateRegisterScripts DEPENDS "${GENERATED_REGISTER_SCRIPTS_HEADER}")
+
+file(GLOB_RECURSE GAME_SOURCES CONFIGURE_DEPENDS src/*.c*)
+file(GLOB_RECURSE GAME_HEADERS CONFIGURE_DEPENDS include/*.h*)
+list(REMOVE_ITEM GAME_HEADERS "${GENERATED_REGISTER_SCRIPTS_HEADER}")
+
+message(STATUS "GAME_INCLUDE_DIRS ${GAME_HEADERS}")
+
+set(GAME_CODE_LIBRARY_TYPE SHARED)
+if(CANIS_PLATFORM_WEB)
+    set(GAME_CODE_LIBRARY_TYPE STATIC)
+endif()
+
+add_library(GameCode ${GAME_CODE_LIBRARY_TYPE}
+    ${GAME_HEADERS}
+    ${GAME_SOURCES}
+)
+
+add_dependencies(GameCode GenerateRegisterScripts)
+
+# Include SDL3 headers if needed
+target_include_directories(GameCode PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_precompile_headers(GameCode PRIVATE
+    "$<$<COMPILE_LANGUAGE:CXX>:${CMAKE_CURRENT_SOURCE_DIR}/include/GamePCH.hpp>"
+)
+
+# Link to SDL3 (for logging or future rendering use)
+target_link_libraries(GameCode
+    CanisEngine
+)
+
+target_compile_definitions(GameCode
+    PRIVATE
+    CANIS_EDITOR=${CANIS_EDITOR_DEFINE}
+)
+
+# Set output directory to match the engine executable
+set_target_properties(GameCode PROPERTIES
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+)
+
+if(NOT CANIS_PLATFORM_WEB)
+    add_custom_command(TARGET GameCode POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${CMAKE_SOURCE_DIR}/${PROJECT_SETTINGS_DIR_NAME}/
+            ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_SETTINGS_DIR_NAME})
+endif()
