@@ -10,7 +10,7 @@ mute: false
 editor: true
 syncMode: 0
 iconUUID: 8708093225096235882
-launchScene: assets/scenes/default.scene
+launchScene: 1000000000000000000
 launchExecutablePath: ""
 launchWorkingDirectory: ""
 launchArguments: ""
