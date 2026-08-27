@@ -1,3 +1,5 @@
+gameName: Canis Game
+executableName: c-engine
 useFrameLimit: false
 frameLimit: 120
 frameLimitEditor: 120

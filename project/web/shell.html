@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Canis Game</title>
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; background: #080a10; overflow: hidden; }
+    body { display: grid; place-items: center; font-family: sans-serif; }
+    #game-shell { position: relative; width: min(100vw, 1280px); aspect-ratio: 16 / 9; }
+    #canvas { display: block; width: 100%; height: 100%; background: #080a10; outline: none; }
+    #status { position: absolute; inset: 0; display: grid; place-items: center; color: #f2f2f2;
+      background: #080a10; letter-spacing: .08em; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="canvas" width="1280" height="720" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+    <div id="status">LOADING…</div>
+  </main>
+  <script>
+    var Module = {
+      canvas: document.getElementById('canvas'),
+      print: function (text) { console.log(text); },
+      printErr: function (text) { console.error(text); },
+      setStatus: function (text) {
+        var status = document.getElementById('status');
+        if (!text || text === 'Running...') status.style.display = 'none';
+        else { status.style.display = 'grid'; status.textContent = text; }
+      }
+    };
+  </script>
+  {{{ SCRIPT }}}
+</body>
+</html>

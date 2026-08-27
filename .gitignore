@@ -2,6 +2,8 @@
 build
 /build-debug
 /build-release
+/build-native-release
+/build-port-validation
 /build-web-debug
 /build-web-release
 /game/src/RegisterScripts.cpp
@@ -12,6 +14,9 @@ project/*
 !project/assets/**
 !project/project_settings/
 !project/project_settings/project.canis
+!project/web/
+!project/web/shell.html
+!project/web/persistence.js
 
 .idea
 .vscode
@@ -21,6 +26,8 @@ project/*
 *.tmp
 *.swp
 *.swo
+__pycache__/
+*.pyc
 __cmake_systeminformation
 *vgcore.*
 

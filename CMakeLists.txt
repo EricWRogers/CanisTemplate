@@ -1,7 +1,29 @@
 cmake_minimum_required(VERSION 3.20)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-project(c-engine)
+
+# Keep the produced binary name in the same project settings file used by the
+# runtime/editor. `gameName` is the display title; `executableName` is the
+# filesystem-safe CMake target name.
+set(CANIS_PROJECT_CONFIG "${CMAKE_CURRENT_SOURCE_DIR}/project_settings/project.canis")
+set(CANIS_EXECUTABLE_NAME "c-engine")
+if(EXISTS "${CANIS_PROJECT_CONFIG}")
+  file(STRINGS "${CANIS_PROJECT_CONFIG}" CANIS_EXECUTABLE_NAME_LINE
+    REGEX "^[ \t]*executableName[ \t]*:")
+  if(CANIS_EXECUTABLE_NAME_LINE)
+    list(GET CANIS_EXECUTABLE_NAME_LINE 0 CANIS_EXECUTABLE_NAME_LINE)
+    string(REGEX REPLACE "^[ \t]*executableName[ \t]*:[ \t]*" ""
+      CANIS_EXECUTABLE_NAME "${CANIS_EXECUTABLE_NAME_LINE}")
+    string(REGEX REPLACE "^[\"']|[\"']$" "" CANIS_EXECUTABLE_NAME "${CANIS_EXECUTABLE_NAME}")
+    string(STRIP "${CANIS_EXECUTABLE_NAME}" CANIS_EXECUTABLE_NAME)
+  endif()
+endif()
+if(CANIS_EXECUTABLE_NAME STREQUAL "" OR NOT CANIS_EXECUTABLE_NAME MATCHES "^[A-Za-z0-9_.+-]+$")
+  message(FATAL_ERROR
+    "project_settings/project.canis executableName must contain only letters, numbers, _, ., +, or -")
+endif()
+project(${CANIS_EXECUTABLE_NAME})
+include(CTest)
 set(ASSETS_DIR_NAME assets)
 set(PROJECT_SETTINGS_DIR_NAME project_settings)
 
@@ -26,7 +48,8 @@ if(CANIS_ENABLE_EDITOR)
   set(CANIS_EDITOR_DEFINE 1)
 endif()
 
-set(CANIS_DESKTOP_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/project")
+set(CANIS_DESKTOP_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/project" CACHE PATH
+  "Desktop executable and runtime-library output directory")
 set(CANIS_WEB_EXPORT_DIRECTORY "${CMAKE_BINARY_DIR}/web")
 
 if(CANIS_PLATFORM_WEB)
@@ -208,6 +231,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(canis)
 add_subdirectory(game)
+
+if(NOT CANIS_PLATFORM_WEB)
+  # Keep staged desktop packages relocatable: the executable, engine, and game
+  # module live beside one another and resolve libraries relative to $ORIGIN.
+  set_target_properties(${PROJECT_NAME} CanisEngine GameCode PROPERTIES
+    BUILD_RPATH "$ORIGIN"
+    BUILD_RPATH_USE_ORIGIN TRUE
+    INSTALL_RPATH "$ORIGIN"
+    BUILD_WITH_INSTALL_RPATH TRUE)
+endif()
 
 if(CANIS_PLATFORM_WEB)
   target_link_libraries(${PROJECT_NAME} PRIVATE GameCode)
