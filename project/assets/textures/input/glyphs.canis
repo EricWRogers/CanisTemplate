@@ -1,0 +1,1568 @@
+version: 1
+glyphs:
+- family: xbox
+  path: Gamepad/South
+  label: A
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.043859649122807015
+  - 0.051036682615629984
+  - 0.15629984051036683
+  - 0.16267942583732056
+- family: xbox
+  path: Gamepad/East
+  label: B
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.20334928229665072
+  - 0.050239234449760764
+  - 0.31658692185007975
+  - 0.16267942583732056
+- family: xbox
+  path: Gamepad/West
+  label: X
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.36363636363636365
+  - 0.050239234449760764
+  - 0.47607655502392343
+  - 0.16267942583732056
+- family: xbox
+  path: Gamepad/North
+  label: Y
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.5239234449760766
+  - 0.050239234449760764
+  - 0.6363636363636364
+  - 0.16267942583732056
+- family: xbox
+  path: Gamepad/LeftShoulder
+  label: LB
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.6746411483253588
+  - 0.07177033492822966
+  - 0.8022328548644339
+  - 0.1419457735247209
+- family: xbox
+  path: Gamepad/RightShoulder
+  label: RB
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.8413078149920256
+  - 0.07177033492822966
+  - 0.9665071770334929
+  - 0.1419457735247209
+- family: xbox
+  path: Gamepad/LeftTrigger
+  label: LT
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.050239234449760764
+  - 0.20972886762360446
+  - 0.14912280701754385
+  - 0.3293460925039872
+- family: xbox
+  path: Gamepad/RightTrigger
+  label: RT
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.21052631578947367
+  - 0.20972886762360446
+  - 0.30701754385964913
+  - 0.3293460925039872
+- family: xbox
+  path: Gamepad/Back
+  label: View
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.3620414673046252
+  - 0.22966507177033493
+  - 0.47926634768740034
+  - 0.31100478468899523
+- family: xbox
+  path: Gamepad/Start
+  label: Menu
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.5223285486443381
+  - 0.21212121212121213
+  - 0.6371610845295056
+  - 0.3277511961722488
+- family: xbox
+  path: Gamepad/Guide
+  label: Guide
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.6810207336523126
+  - 0.2113237639553429
+  - 0.7998405103668261
+  - 0.3293460925039872
+- family: xbox
+  path: Gamepad/DpadUp
+  label: Dpad Up
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.0430622009569378
+  - 0.37799043062200954
+  - 0.15550239234449761
+  - 0.48963317384370014
+- family: xbox
+  path: Gamepad/DpadDown
+  label: Dpad Down
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.20334928229665072
+  - 0.37799043062200954
+  - 0.3157894736842105
+  - 0.4904306220095694
+- family: xbox
+  path: Gamepad/DpadLeft
+  label: Dpad Left
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.3620414673046252
+  - 0.37799043062200954
+  - 0.47607655502392343
+  - 0.48963317384370014
+- family: xbox
+  path: Gamepad/DpadRight
+  label: Dpad Right
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.5239234449760766
+  - 0.37799043062200954
+  - 0.6371610845295056
+  - 0.48963317384370014
+- family: xbox
+  path: Gamepad/LeftStick
+  label: Left Stick
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.03827751196172249
+  - 0.5263157894736842
+  - 0.16028708133971292
+  - 0.6475279106858054
+- family: xbox
+  path: Gamepad/LeftStickPress
+  label: Left Stick Press
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.19856459330143542
+  - 0.5263157894736842
+  - 0.32057416267942584
+  - 0.6475279106858054
+- family: xbox
+  path: Gamepad/RightStick
+  label: Right Stick
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.03827751196172249
+  - 0.6786283891547049
+  - 0.16028708133971292
+  - 0.8006379585326954
+- family: xbox
+  path: Gamepad/RightStickPress
+  label: Right Stick Press
+  texture: assets/textures/input/xbox.png
+  uv:
+  - 0.19856459330143542
+  - 0.6786283891547049
+  - 0.32057416267942584
+  - 0.7998405103668261
+- family: switch
+  path: Gamepad/South
+  label: B
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.051834130781499205
+  - 0.05502392344497608
+  - 0.15550239234449761
+  - 0.15789473684210525
+- family: switch
+  path: Gamepad/East
+  label: A
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.21052631578947367
+  - 0.05502392344497608
+  - 0.3141945773524721
+  - 0.15789473684210525
+- family: switch
+  path: Gamepad/West
+  label: Y
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.36921850079744817
+  - 0.05502392344497608
+  - 0.47208931419457734
+  - 0.15869218500797447
+- family: switch
+  path: Gamepad/North
+  label: X
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.5279106858054227
+  - 0.05502392344497608
+  - 0.631578947368421
+  - 0.15789473684210525
+- family: switch
+  path: Gamepad/LeftShoulder
+  label: L
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.6730462519936204
+  - 0.0733652312599681
+  - 0.7926634768740032
+  - 0.1419457735247209
+- family: switch
+  path: Gamepad/RightShoulder
+  label: R
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.8405103668261563
+  - 0.0733652312599681
+  - 0.9609250398724083
+  - 0.1419457735247209
+- family: switch
+  path: Gamepad/LeftTrigger
+  label: ZL
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.045454545454545456
+  - 0.22009569377990432
+  - 0.15390749601275916
+  - 0.3269537480063796
+- family: switch
+  path: Gamepad/RightTrigger
+  label: ZR
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.21371610845295055
+  - 0.22009569377990432
+  - 0.32216905901116427
+  - 0.3269537480063796
+- family: switch
+  path: Gamepad/Back
+  label: Minus
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.372408293460925
+  - 0.22807017543859648
+  - 0.4649122807017544
+  - 0.32137161084529503
+- family: switch
+  path: Gamepad/Start
+  label: Plus
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.5318979266347688
+  - 0.22727272727272727
+  - 0.6275917065390749
+  - 0.3229665071770335
+- family: switch
+  path: Gamepad/Guide
+  label: Home
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.6850079744816587
+  - 0.22089314194577353
+  - 0.7902711323763956
+  - 0.32854864433811803
+- family: switch
+  path: Gamepad/DpadUp
+  label: Dpad Up
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.046251993620414676
+  - 0.3843700159489633
+  - 0.15869218500797447
+  - 0.49521531100478466
+- family: switch
+  path: Gamepad/DpadDown
+  label: Dpad Down
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.2065390749601276
+  - 0.3843700159489633
+  - 0.3189792663476874
+  - 0.49521531100478466
+- family: switch
+  path: Gamepad/DpadLeft
+  label: Dpad Left
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.36363636363636365
+  - 0.3843700159489633
+  - 0.47767145135566186
+  - 0.49521531100478466
+- family: switch
+  path: Gamepad/DpadRight
+  label: Dpad Right
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.5231259968102073
+  - 0.38516746411483255
+  - 0.6371610845295056
+  - 0.49521531100478466
+- family: switch
+  path: Gamepad/LeftStick
+  label: Left Stick
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.0430622009569378
+  - 0.5414673046251993
+  - 0.16267942583732056
+  - 0.6594896331738437
+- family: switch
+  path: Gamepad/LeftStickPress
+  label: Left Stick Press
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.2025518341307815
+  - 0.5414673046251993
+  - 0.32057416267942584
+  - 0.6594896331738437
+- family: switch
+  path: Gamepad/RightStick
+  label: Right Stick
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.0430622009569378
+  - 0.6993620414673046
+  - 0.16188197767145135
+  - 0.8165869218500797
+- family: switch
+  path: Gamepad/RightStickPress
+  label: Right Stick Press
+  texture: assets/textures/input/switch.png
+  uv:
+  - 0.2025518341307815
+  - 0.6993620414673046
+  - 0.32137161084529503
+  - 0.8165869218500797
+- family: playstation
+  path: Gamepad/South
+  label: Cross
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.04226475279106858
+  - 0.051036682615629984
+  - 0.1547049441786284
+  - 0.16267942583732056
+- family: playstation
+  path: Gamepad/East
+  label: Circle
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.20334928229665072
+  - 0.051036682615629984
+  - 0.3149920255183413
+  - 0.16267942583732056
+- family: playstation
+  path: Gamepad/West
+  label: Square
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.3628389154704944
+  - 0.051036682615629984
+  - 0.47527910685805425
+  - 0.16267942583732056
+- family: playstation
+  path: Gamepad/North
+  label: Triangle
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.5231259968102073
+  - 0.051036682615629984
+  - 0.6355661881977671
+  - 0.1634768740031898
+- family: playstation
+  path: Gamepad/LeftShoulder
+  label: L1
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.6802232854864434
+  - 0.07017543859649122
+  - 0.803030303030303
+  - 0.14274322169059012
+- family: playstation
+  path: Gamepad/RightShoulder
+  label: R1
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.8405103668261563
+  - 0.07017543859649122
+  - 0.9625199362041468
+  - 0.14274322169059012
+- family: playstation
+  path: Gamepad/LeftTrigger
+  label: L2
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.046251993620414676
+  - 0.2025518341307815
+  - 0.14912280701754385
+  - 0.3269537480063796
+- family: playstation
+  path: Gamepad/RightTrigger
+  label: R2
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.20574162679425836
+  - 0.2025518341307815
+  - 0.30861244019138756
+  - 0.3269537480063796
+- family: playstation
+  path: Gamepad/Back
+  label: Create
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.3628389154704944
+  - 0.21052631578947367
+  - 0.47527910685805425
+  - 0.3229665071770335
+- family: playstation
+  path: Gamepad/Start
+  label: Options
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.5231259968102073
+  - 0.21052631578947367
+  - 0.6355661881977671
+  - 0.32456140350877194
+- family: playstation
+  path: Gamepad/Guide
+  label: PS
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.6834130781499203
+  - 0.2113237639553429
+  - 0.7982456140350878
+  - 0.3253588516746411
+- family: playstation
+  path: Gamepad/DpadUp
+  label: Dpad Up
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.03987240829346093
+  - 0.3708133971291866
+  - 0.15629984051036683
+  - 0.48564593301435405
+- family: playstation
+  path: Gamepad/DpadDown
+  label: Dpad Down
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.20015948963317384
+  - 0.3708133971291866
+  - 0.31658692185007975
+  - 0.48564593301435405
+- family: playstation
+  path: Gamepad/DpadLeft
+  label: Dpad Left
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.36044657097288674
+  - 0.3700159489633174
+  - 0.47607655502392343
+  - 0.48564593301435405
+- family: playstation
+  path: Gamepad/DpadRight
+  label: Dpad Right
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.5223285486443381
+  - 0.3708133971291866
+  - 0.6379585326953748
+  - 0.48564593301435405
+- family: playstation
+  path: Gamepad/LeftStick
+  label: Left Stick
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.03668261562998405
+  - 0.5223285486443381
+  - 0.15629984051036683
+  - 0.6419457735247209
+- family: playstation
+  path: Gamepad/LeftStickPress
+  label: Left Stick Press
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.19696969696969696
+  - 0.5223285486443381
+  - 0.3181818181818182
+  - 0.6435406698564593
+- family: playstation
+  path: Gamepad/RightStick
+  label: Right Stick
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.03668261562998405
+  - 0.682615629984051
+  - 0.15629984051036683
+  - 0.8022328548644339
+- family: playstation
+  path: Gamepad/RightStickPress
+  label: Right Stick Press
+  texture: assets/textures/input/playstation.png
+  uv:
+  - 0.19776714513556617
+  - 0.6810207336523126
+  - 0.31738437001594894
+  - 0.8006379585326954
+- family: steam_controller
+  path: Gamepad/South
+  label: A
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.045454545454545456
+  - 0.050239234449760764
+  - 0.15629984051036683
+  - 0.16267942583732056
+- family: steam_controller
+  path: Gamepad/East
+  label: B
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.20494417862838915
+  - 0.050239234449760764
+  - 0.31738437001594894
+  - 0.16267942583732056
+- family: steam_controller
+  path: Gamepad/West
+  label: X
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.36443381180223283
+  - 0.050239234449760764
+  - 0.47607655502392343
+  - 0.16267942583732056
+- family: steam_controller
+  path: Gamepad/North
+  label: Y
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.5231259968102073
+  - 0.050239234449760764
+  - 0.6347687400318979
+  - 0.16267942583732056
+- family: steam_controller
+  path: Gamepad/LeftShoulder
+  label: LB
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.6754385964912281
+  - 0.0733652312599681
+  - 0.8022328548644339
+  - 0.14274322169059012
+- family: steam_controller
+  path: Gamepad/RightShoulder
+  label: RB
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.8365231259968102
+  - 0.0733652312599681
+  - 0.9593301435406698
+  - 0.14274322169059012
+- family: steam_controller
+  path: Gamepad/LeftTrigger
+  label: LT
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.051834130781499205
+  - 0.20813397129186603
+  - 0.14274322169059012
+  - 0.32854864433811803
+- family: steam_controller
+  path: Gamepad/RightTrigger
+  label: RT
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.21770334928229665
+  - 0.20813397129186603
+  - 0.3094098883572568
+  - 0.32854864433811803
+- family: steam_controller
+  path: Gamepad/Back
+  label: Back
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.3700159489633174
+  - 0.22248803827751196
+  - 0.4625199362041467
+  - 0.3197767145135566
+- family: steam_controller
+  path: Gamepad/Start
+  label: Start
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.5374800637958532
+  - 0.22248803827751196
+  - 0.6299840510366826
+  - 0.3197767145135566
+- family: steam_controller
+  path: Gamepad/Guide
+  label: Steam
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.682615629984051
+  - 0.20893141945773525
+  - 0.7998405103668261
+  - 0.32854864433811803
+- family: steam_controller
+  path: Gamepad/LeftStick
+  label: Left Stick
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.8405103668261563
+  - 0.36921850079744817
+  - 0.9609250398724083
+  - 0.4880382775119617
+- family: steam_controller
+  path: Gamepad/LeftStickPress
+  label: Left Stick Press
+  texture: assets/textures/input/steam_controller.png
+  uv:
+  - 0.03588516746411483
+  - 0.5167464114832536
+  - 0.15629984051036683
+  - 0.6347687400318979
+- family: keyboard_en_us
+  path: Keyboard/Escape
+  label: Escape
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.058011049723756904
+  - 0.0835635359116022
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/Printscreen
+  label: Printscreen
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.15377532228360957
+  - 0.1664364640883978
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/Scrolllock
+  label: Scrolllock
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.15377532228360957
+  - 0.24930939226519336
+  - 0.23480662983425415
+- family: keyboard_en_us
+  path: Keyboard/Pause
+  label: Pause
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.15377532228360957
+  - 0.3308011049723757
+  - 0.23480662983425415
+- family: keyboard_en_us
+  path: Keyboard/Grave
+  label: Grave
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.3425414364640884
+  - 0.15561694290976058
+  - 0.412292817679558
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/Minus
+  label: Minus
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.2532228360957643
+  - 0.3301104972375691
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Equals
+  label: Equals
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.3425414364640884
+  - 0.2532228360957643
+  - 0.412292817679558
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Backspace
+  label: Backspace
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4212707182320442
+  - 0.2532228360957643
+  - 0.4972375690607735
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Tab
+  label: Tab
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.2532228360957643
+  - 0.5766574585635359
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Leftbracket
+  label: Leftbracket
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.35451197053406996
+  - 0.494475138121547
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/Rightbracket
+  label: Rightbracket
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.35451197053406996
+  - 0.5759668508287292
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/Backslash
+  label: Backslash
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.35451197053406996
+  - 0.6581491712707183
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/Capslock
+  label: Capslock
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.6691988950276243
+  - 0.35451197053406996
+  - 0.7403314917127072
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/Semicolon
+  label: Semicolon
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.4548802946593002
+  - 0.5759668508287292
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/Apostrophe
+  label: Apostrophe
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.4539594843462247
+  - 0.6581491712707183
+  - 0.5359116022099447
+- family: keyboard_en_us
+  path: Keyboard/Enter
+  label: Enter
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.6691988950276243
+  - 0.4539594843462247
+  - 0.7396408839779005
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/LeftShift
+  label: Left Shift
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7513812154696132
+  - 0.4539594843462247
+  - 0.8218232044198895
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/Comma
+  label: Comma
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.5552486187845304
+  - 0.494475138121547
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/Period
+  label: Period
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.5552486187845304
+  - 0.5759668508287292
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/Slash
+  label: Slash
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.5552486187845304
+  - 0.6574585635359116
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/RightShift
+  label: Right Shift
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.6691988950276243
+  - 0.5561694290976059
+  - 0.7396408839779005
+  - 0.6362799263351749
+- family: keyboard_en_us
+  path: Keyboard/LeftCtrl
+  label: Left Ctrl
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7506906077348067
+  - 0.5552486187845304
+  - 0.8225138121546961
+  - 0.6362799263351749
+- family: keyboard_en_us
+  path: Keyboard/LeftMeta
+  label: Left Meta
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.5552486187845304
+  - 0.9164364640883977
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/LeftAlt
+  label: Left Alt
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.5552486187845304
+  - 0.9841160220994475
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/Space
+  label: Space
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.6528545119705341
+  - 0.0835635359116022
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/RightAlt
+  label: Right Alt
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.6528545119705341
+  - 0.1664364640883978
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/RightMeta
+  label: Right Meta
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.6528545119705341
+  - 0.24930939226519336
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Application
+  label: Application
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.2596685082872928
+  - 0.6528545119705341
+  - 0.3301104972375691
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/RightCtrl
+  label: Right Ctrl
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.6537753222836096
+  - 0.412292817679558
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Insert
+  label: Insert
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.6537753222836096
+  - 0.494475138121547
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Home
+  label: Home
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.6537753222836096
+  - 0.5759668508287292
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Pageup
+  label: Pageup
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.6528545119705341
+  - 0.6581491712707183
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Delete
+  label: Delete
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.6691988950276243
+  - 0.6537753222836096
+  - 0.7396408839779005
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/End
+  label: End
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7513812154696132
+  - 0.6537753222836096
+  - 0.8218232044198895
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Pagedown
+  label: Pagedown
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.6537753222836096
+  - 0.9164364640883977
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Up
+  label: Up
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.6528545119705341
+  - 0.9841160220994475
+  - 0.7338858195211786
+- family: keyboard_en_us
+  path: Keyboard/Left
+  label: Left
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015883977900552487
+  - 0.7523020257826888
+  - 0.0835635359116022
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Down
+  label: Down
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.7523020257826888
+  - 0.1664364640883978
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Right
+  label: Right
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17955801104972377
+  - 0.7523020257826888
+  - 0.24930939226519336
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/NumLock
+  label: Num Lock
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.7513812154696132
+  - 0.3301104972375691
+  - 0.8314917127071824
+- family: keyboard_en_us
+  path: Keyboard/KpDivide
+  label: Kp Divide
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.7523020257826888
+  - 0.4116022099447514
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/KpMultiply
+  label: Kp Multiply
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.7523020257826888
+  - 0.494475138121547
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/KpMinus
+  label: Kp Minus
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.7513812154696132
+  - 0.5759668508287292
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/KpPlus
+  label: Kp Plus
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.7532228360957642
+  - 0.9164364640883977
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/KpEnter
+  label: Kp Enter
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.42265193370165743
+  - 0.850828729281768
+  - 0.494475138121547
+  - 0.9318600368324125
+- family: keyboard_en_us
+  path: Keyboard/Kp0
+  label: Kp0
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.850828729281768
+  - 0.5759668508287292
+  - 0.930939226519337
+- family: keyboard_en_us
+  path: Keyboard/KpPeriod
+  label: Kp Period
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.850828729281768
+  - 0.6581491712707183
+  - 0.9318600368324125
+- family: keyboard_en_us
+  path: Keyboard/F1
+  label: F1
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.058011049723756904
+  - 0.1664364640883978
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F2
+  label: F2
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.1781767955801105
+  - 0.058011049723756904
+  - 0.24861878453038674
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F3
+  label: F3
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.058011049723756904
+  - 0.3301104972375691
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F4
+  label: F4
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.058011049723756904
+  - 0.412292817679558
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F5
+  label: F5
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.058011049723756904
+  - 0.494475138121547
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F6
+  label: F6
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.058011049723756904
+  - 0.5766574585635359
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F7
+  label: F7
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.058011049723756904
+  - 0.6581491712707183
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F8
+  label: F8
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.669889502762431
+  - 0.058011049723756904
+  - 0.7403314917127072
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F9
+  label: F9
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7520718232044199
+  - 0.058011049723756904
+  - 0.8218232044198895
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F10
+  label: F10
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.058011049723756904
+  - 0.9040055248618785
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F11
+  label: F11
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.058011049723756904
+  - 0.9854972375690608
+  - 0.13627992633517497
+- family: keyboard_en_us
+  path: Keyboard/F12
+  label: F12
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.15469613259668508
+  - 0.0835635359116022
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/1
+  label: '1'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.42472375690607733
+  - 0.15469613259668508
+  - 0.494475138121547
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/2
+  label: '2'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5062154696132597
+  - 0.15469613259668508
+  - 0.5766574585635359
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/3
+  label: '3'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5883977900552486
+  - 0.15469613259668508
+  - 0.6581491712707183
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/4
+  label: '4'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.669889502762431
+  - 0.15469613259668508
+  - 0.7403314917127072
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/5
+  label: '5'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7520718232044199
+  - 0.15469613259668508
+  - 0.8218232044198895
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/6
+  label: '6'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.15469613259668508
+  - 0.9040055248618785
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/7
+  label: '7'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.15469613259668508
+  - 0.9854972375690608
+  - 0.23572744014732966
+- family: keyboard_en_us
+  path: Keyboard/8
+  label: '8'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.2532228360957643
+  - 0.0835635359116022
+  - 0.3351749539594843
+- family: keyboard_en_us
+  path: Keyboard/9
+  label: '9'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.2532228360957643
+  - 0.1664364640883978
+  - 0.3351749539594843
+- family: keyboard_en_us
+  path: Keyboard/0
+  label: '0'
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.2532228360957643
+  - 0.24930939226519336
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Q
+  label: Q
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.5883977900552486
+  - 0.2532228360957643
+  - 0.6581491712707183
+  - 0.3333333333333333
+- family: keyboard_en_us
+  path: Keyboard/W
+  label: W
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.669889502762431
+  - 0.2532228360957643
+  - 0.7403314917127072
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/E
+  label: E
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7520718232044199
+  - 0.2532228360957643
+  - 0.8218232044198895
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/R
+  label: R
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.2532228360957643
+  - 0.9040055248618785
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/T
+  label: T
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.2532228360957643
+  - 0.9854972375690608
+  - 0.3342541436464088
+- family: keyboard_en_us
+  path: Keyboard/Y
+  label: Y
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.35451197053406996
+  - 0.0835635359116022
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/U
+  label: U
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.35451197053406996
+  - 0.1664364640883978
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/I
+  label: I
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.35451197053406996
+  - 0.24861878453038674
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/O
+  label: O
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.35451197053406996
+  - 0.3301104972375691
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/P
+  label: P
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.35451197053406996
+  - 0.4116022099447514
+  - 0.43554327808471455
+- family: keyboard_en_us
+  path: Keyboard/A
+  label: A
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7520718232044199
+  - 0.35451197053406996
+  - 0.8218232044198895
+  - 0.43646408839779005
+- family: keyboard_en_us
+  path: Keyboard/S
+  label: S
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.35451197053406996
+  - 0.9033149171270718
+  - 0.43646408839779005
+- family: keyboard_en_us
+  path: Keyboard/D
+  label: D
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.35451197053406996
+  - 0.9848066298342542
+  - 0.43646408839779005
+- family: keyboard_en_us
+  path: Keyboard/F
+  label: F
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.4539594843462247
+  - 0.0835635359116022
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/G
+  label: G
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.4539594843462247
+  - 0.1664364640883978
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/H
+  label: H
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.4539594843462247
+  - 0.24861878453038674
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/J
+  label: J
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.4539594843462247
+  - 0.3301104972375691
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/K
+  label: K
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.4539594843462247
+  - 0.4116022099447514
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/L
+  label: L
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.4240331491712707
+  - 0.4539594843462247
+  - 0.494475138121547
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/Z
+  label: Z
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.8335635359116023
+  - 0.4539594843462247
+  - 0.9164364640883977
+  - 0.5340699815837937
+- family: keyboard_en_us
+  path: Keyboard/X
+  label: X
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.4539594843462247
+  - 0.9848066298342542
+  - 0.5349907918968693
+- family: keyboard_en_us
+  path: Keyboard/C
+  label: C
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015193370165745856
+  - 0.5552486187845304
+  - 0.0835635359116022
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/V
+  label: V
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.5552486187845304
+  - 0.1664364640883978
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/B
+  label: B
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17886740331491713
+  - 0.5552486187845304
+  - 0.24930939226519336
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/N
+  label: N
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.5552486187845304
+  - 0.3301104972375691
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/M
+  label: M
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.5552486187845304
+  - 0.4116022099447514
+  - 0.6353591160220995
+- family: keyboard_en_us
+  path: Keyboard/Kp7
+  label: Kp7
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.587707182320442
+  - 0.7523020257826888
+  - 0.6574585635359116
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Kp8
+  label: Kp8
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.669889502762431
+  - 0.7523020257826888
+  - 0.7396408839779005
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Kp9
+  label: Kp9
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.7513812154696132
+  - 0.7523020257826888
+  - 0.8218232044198895
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Kp4
+  label: Kp4
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.9164364640883977
+  - 0.7523020257826888
+  - 0.9841160220994475
+  - 0.8324125230202578
+- family: keyboard_en_us
+  path: Keyboard/Kp5
+  label: Kp5
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.015883977900552487
+  - 0.850828729281768
+  - 0.0835635359116022
+  - 0.930939226519337
+- family: keyboard_en_us
+  path: Keyboard/Kp6
+  label: Kp6
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.0835635359116022
+  - 0.850828729281768
+  - 0.1664364640883978
+  - 0.930939226519337
+- family: keyboard_en_us
+  path: Keyboard/Kp1
+  label: Kp1
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.17955801104972377
+  - 0.850828729281768
+  - 0.24930939226519336
+  - 0.930939226519337
+- family: keyboard_en_us
+  path: Keyboard/Kp2
+  label: Kp2
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.26035911602209943
+  - 0.8499079189686924
+  - 0.3301104972375691
+  - 0.930939226519337
+- family: keyboard_en_us
+  path: Keyboard/Kp3
+  label: Kp3
+  texture: assets/textures/input/keyboard_en_us.png
+  uv:
+  - 0.34185082872928174
+  - 0.850828729281768
+  - 0.4116022099447514
+  - 0.930939226519337

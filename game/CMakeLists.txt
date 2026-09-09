@@ -1,3 +1,16 @@
+include(cmake/InputActions.cmake)
+set(GENERATED_TAGS_HEADER "${CMAKE_CURRENT_BINARY_DIR}/generated/Tags.generated.hpp")
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/generated")
+add_custom_command(
+    OUTPUT "${GENERATED_TAGS_HEADER}"
+    COMMAND ${CMAKE_COMMAND}
+        -DSETTINGS_FILE=${PROJECT_SOURCE_DIR}/project_settings/project.canis
+        -DOUTPUT_FILE=${GENERATED_TAGS_HEADER}
+        -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/GenerateTags.cmake
+    DEPENDS "${PROJECT_SOURCE_DIR}/project_settings/project.canis"
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/GenerateTags.cmake"
+    VERBATIM)
+add_custom_target(GenerateTags DEPENDS "${GENERATED_TAGS_HEADER}")
 set(GAME_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/game")
 message(STATUS "GAME_INCLUDE_DIRS ${GAME_INCLUDE_DIRS}")
 
@@ -51,10 +64,11 @@ add_library(GameCode ${GAME_CODE_LIBRARY_TYPE}
     ${GAME_SOURCES}
 )
 
-add_dependencies(GameCode GenerateRegisterScripts)
+add_dependencies(GameCode GenerateRegisterScripts GenerateTags GenerateInputActions)
 
 # Include SDL3 headers if needed
 target_include_directories(GameCode PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}/generated
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
@@ -84,4 +98,8 @@ if(NOT CANIS_PLATFORM_WEB)
         COMMAND ${CMAKE_COMMAND} -E copy_directory
             ${CMAKE_SOURCE_DIR}/${PROJECT_SETTINGS_DIR_NAME}/
             ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_SETTINGS_DIR_NAME})
+endif()
+
+if(BUILD_TESTING AND NOT CANIS_PLATFORM_WEB)
+    add_test(NAME TagGenerationTests COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/test_tag_generation.py")
 endif()

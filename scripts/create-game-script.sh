@@ -180,7 +180,7 @@ fi
 
 {
     printf '#pragma once\n\n'
-    printf '#include <Canis/Entity.hpp>\n\n'
+    printf '#include <Canis/Components.hpp>\n\n'
     printf 'namespace Canis\n{\n    class App;\n}\n'
 
     if ((${#namespace_parts[@]} > 0)); then

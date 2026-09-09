@@ -1,0 +1,68 @@
+version: 1
+reservedIds: []
+maps:
+- id: 100
+  name: Gameplay
+  actions:
+  - id: 1001
+    name: Jump
+    type: Button
+    bindings:
+    - id: 2001
+      scheme: KeyboardMouse
+      path: Keyboard/Space
+    - id: 2002
+      scheme: Gamepad
+      path: Gamepad/South
+  - id: 1002
+    name: Move
+    type: Axis2D
+    bindings:
+    - id: 2003
+      scheme: KeyboardMouse
+      path: Composite/Axis2D
+      parts:
+        up: Keyboard/W
+        down: Keyboard/S
+        left: Keyboard/A
+        right: Keyboard/D
+    - id: 2004
+      scheme: Gamepad
+      path: Gamepad/LeftStick
+      deadZone: 0.2
+  - id: 1008
+    name: LookDelta
+    type: Axis2D
+    bindings:
+    - id: 2017
+      scheme: KeyboardMouse
+      path: Mouse/Delta
+- id: 101
+  name: UI
+  actions:
+  - id: 1102
+    name: UICancel
+    type: Button
+    bindings:
+    - id: 2038
+      scheme: KeyboardMouse
+      path: Keyboard/Escape
+    - id: 2039
+      scheme: Gamepad
+      path: Gamepad/East
+  - id: 1103
+    name: UINavigate
+    type: Axis2D
+    bindings:
+    - id: 2040
+      scheme: KeyboardMouse
+      path: Composite/Axis2D
+      parts:
+        up: Keyboard/Up
+        down: Keyboard/Down
+        left: Keyboard/Left
+        right: Keyboard/Right
+    - id: 2041
+      scheme: Gamepad
+      path: Gamepad/LeftStick
+      deadZone: 0.3

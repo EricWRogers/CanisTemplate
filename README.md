@@ -15,6 +15,7 @@ This template includes the full build shape expected by Canis:
 
 ```bash
 git submodule update --init --recursive
+python3 -m pip install -r game/tools/requirements-input.txt
 cmake --preset debug
 cmake --build --preset debug -j24
 ```
@@ -80,3 +81,22 @@ expansion.
 ```
 
 The default project opens `project/assets/scenes/default.scene`, which contains a camera, light, and cube using the generic default assets.
+
+## Input actions and entity values
+
+The Input Actions editor edits `project_settings/input.canis`. Rebuild after changing action names or IDs to regenerate `InputActions.generated.hpp`. Gameplay starts enabled; enable the UI map when opening menus. Default glyph sheets cover English keyboards, Xbox, PlayStation, Switch, and Steam controllers.
+
+```cpp
+#include <InputActions.generated.hpp>
+#include <Canis/InputManager.hpp>
+
+auto& input = scene.GetInputManager();
+auto jump = input.Action(InputAction::Jump);
+// Select a controller with input.Action(InputAction::Jump, controllerIndex).
+```
+
+Steam Input is optional and disabled by default. Native builds can enable it with `-DCANIS_ENABLE_STEAM_INPUT=ON -DCANIS_STEAMWORKS_SDK=/path/to/sdk`. Generated Steam manifests are placed under the build directory's `game/generated/steam`; published controller configurations remain project-specific.
+
+Project tags generate `Tags.generated.hpp` with stable numeric IDs. Add uppercase-leading tag names in Project Settings, then rebuild. Include `Canis/Components.hpp` when using built-in components. Store entity references as `Canis::Entity` values and check validity before access; their owning scene must still exist. Multiple different scripts live in an optional `ScriptComponent`, managed through Entity's script methods. See [entity API](docs/entities.md).
+
+Run the engine and generator checks with `ctest --test-dir build --output-on-failure`. Native GCC/Clang builds can enable AddressSanitizer and UndefinedBehaviorSanitizer with `-DCANIS_ENABLE_SANITIZERS=ON`.

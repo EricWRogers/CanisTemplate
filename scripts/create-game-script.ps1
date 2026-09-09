@@ -167,7 +167,7 @@ if ($requiredComponents.Count -gt 0) {
 $headerLines = [System.Collections.Generic.List[string]]::new()
 $headerLines.Add('#pragma once')
 $headerLines.Add('')
-$headerLines.Add('#include <Canis/Entity.hpp>')
+$headerLines.Add('#include <Canis/Components.hpp>')
 $headerLines.Add('')
 $headerLines.Add('namespace Canis')
 $headerLines.Add('{')

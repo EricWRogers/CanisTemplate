@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "texture": "steam_controller.png",
+  "device": "original 2015 Valve Steam Controller with ONE left analog stick and TWO circular trackpads; never substitute Steam Deck",
+  "size": [
+    1254,
+    1254
+  ],
+  "origin": "top-left",
+  "rect_format": "[x, y, width, height]",
+  "columns": 6,
+  "rows": 6,
+  "sprites": [
+    {
+      "id": "steam_controller/000",
+      "label": "A circular face button",
+      "row": 0,
+      "column": 0,
+      "rect": [
+        57,
+        63,
+        139,
+        141
+      ],
+      "uv_top_left": [
+        0.045454545454545456,
+        0.050239234449760764,
+        0.15629984051036683,
+        0.16267942583732056
+      ]
+    },
+    {
+      "id": "steam_controller/001",
+      "label": "B circular face button",
+      "row": 0,
+      "column": 1,
+      "rect": [
+        257,
+        63,
+        141,
+        141
+      ],
+      "uv_top_left": [
+        0.20494417862838915,
+        0.050239234449760764,
+        0.31738437001594894,
+        0.16267942583732056
+      ]
+    },
+    {
+      "id": "steam_controller/002",
+      "label": "X circular face button",
+      "row": 0,
+      "column": 2,
+      "rect": [
+        457,
+        63,
+        140,
+        141
+      ],
+      "uv_top_left": [
+        0.36443381180223283,
+        0.050239234449760764,
+        0.47607655502392343,
+        0.16267942583732056
+      ]
+    },
+    {
+      "id": "steam_controller/003",
+      "label": "Y circular face button",
+      "row": 0,
+      "column": 3,
+      "rect": [
+        656,
+        63,
+        140,
+        141
+      ],
+      "uv_top_left": [
+        0.5231259968102073,
+        0.050239234449760764,
+        0.6347687400318979,
+        0.16267942583732056
+      ]
+    },
+    {
+      "id": "steam_controller/004",
+      "label": "LB shoulder",
+      "row": 0,
+      "column": 4,
+      "rect": [
+        847,
+        92,
+        159,
+        87
+      ],
+      "uv_top_left": [
+        0.6754385964912281,
+        0.0733652312599681,
+        0.8022328548644339,
+        0.14274322169059012
+      ]
+    },
+    {
+      "id": "steam_controller/005",
+      "label": "RB shoulder",
+      "row": 0,
+      "column": 5,
+      "rect": [
+        1049,
+        92,
+        154,
+        87
+      ],
+      "uv_top_left": [
+        0.8365231259968102,
+        0.0733652312599681,
+        0.9593301435406698,
+        0.14274322169059012
+      ]
+    },
+    {
+      "id": "steam_controller/006",
+      "label": "LT trigger",
+      "row": 1,
+      "column": 0,
+      "rect": [
+        65,
+        261,
+        114,
+        151
+      ],
+      "uv_top_left": [
+        0.051834130781499205,
+        0.20813397129186603,
+        0.14274322169059012,
+        0.32854864433811803
+      ]
+    },
+    {
+      "id": "steam_controller/007",
+      "label": "RT trigger",
+      "row": 1,
+      "column": 1,
+      "rect": [
+        273,
+        261,
+        115,
+        151
+      ],
+      "uv_top_left": [
+        0.21770334928229665,
+        0.20813397129186603,
+        0.3094098883572568,
+        0.32854864433811803
+      ]
+    },
+    {
+      "id": "steam_controller/008",
+      "label": "Back (left-pointing triangle)",
+      "row": 1,
+      "column": 2,
+      "rect": [
+        464,
+        279,
+        116,
+        122
+      ],
+      "uv_top_left": [
+        0.3700159489633174,
+        0.22248803827751196,
+        0.4625199362041467,
+        0.3197767145135566
+      ]
+    },
+    {
+      "id": "steam_controller/009",
+      "label": "Start (right-pointing triangle)",
+      "row": 1,
+      "column": 3,
+      "rect": [
+        674,
+        279,
+        116,
+        122
+      ],
+      "uv_top_left": [
+        0.5374800637958532,
+        0.22248803827751196,
+        0.6299840510366826,
+        0.3197767145135566
+      ]
+    },
+    {
+      "id": "steam_controller/010",
+      "label": "Steam home labeled STEAM",
+      "row": 1,
+      "column": 4,
+      "rect": [
+        856,
+        262,
+        147,
+        150
+      ],
+      "uv_top_left": [
+        0.682615629984051,
+        0.20893141945773525,
+        0.7998405103668261,
+        0.32854864433811803
+      ]
+    },
+    {
+      "id": "steam_controller/011",
+      "label": "left rear grip labeled LG",
+      "row": 1,
+      "column": 5,
+      "rect": [
+        1086,
+        261,
+        102,
+        152
+      ],
+      "uv_top_left": [
+        0.8660287081339713,
+        0.20813397129186603,
+        0.9473684210526315,
+        0.3293460925039872
+      ]
+    },
+    {
+      "id": "steam_controller/012",
+      "label": "right rear grip labeled RG",
+      "row": 2,
+      "column": 0,
+      "rect": [
+        66,
+        460,
+        108,
+        152
+      ],
+      "uv_top_left": [
+        0.05263157894736842,
+        0.3668261562998405,
+        0.13875598086124402,
+        0.4880382775119617
+      ]
+    },
+    {
+      "id": "steam_controller/013",
+      "label": "left trackpad neutral (circle labeled LP)",
+      "row": 2,
+      "column": 1,
+      "rect": [
+        250,
+        460,
+        153,
+        152
+      ],
+      "uv_top_left": [
+        0.19936204146730463,
+        0.3668261562998405,
+        0.32137161084529503,
+        0.4880382775119617
+      ]
+    },
+    {
+      "id": "steam_controller/014",
+      "label": "right trackpad neutral (circle labeled RP)",
+      "row": 2,
+      "column": 2,
+      "rect": [
+        448,
+        460,
+        153,
+        152
+      ],
+      "uv_top_left": [
+        0.3572567783094099,
+        0.3668261562998405,
+        0.47926634768740034,
+        0.4880382775119617
+      ]
+    },
+    {
+      "id": "steam_controller/015",
+      "label": "left trackpad click (LP with press chevron)",
+      "row": 2,
+      "column": 3,
+      "rect": [
+        650,
+        459,
+        152,
+        152
+      ],
+      "uv_top_left": [
+        0.518341307814992,
+        0.3660287081339713,
+        0.6395534290271132,
+        0.48724082934609253
+      ]
+    },
+    {
+      "id": "steam_controller/016",
+      "label": "right trackpad click (RP with press chevron)",
+      "row": 2,
+      "column": 4,
+      "rect": [
+        851,
+        458,
+        154,
+        154
+      ],
+      "uv_top_left": [
+        0.6786283891547049,
+        0.3652312599681021,
+        0.8014354066985646,
+        0.4880382775119617
+      ]
+    },
+    {
+      "id": "steam_controller/017",
+      "label": "left stick L neutral",
+      "row": 2,
+      "column": 5,
+      "rect": [
+        1054,
+        463,
+        151,
+        149
+      ],
+      "uv_top_left": [
+        0.8405103668261563,
+        0.36921850079744817,
+        0.9609250398724083,
+        0.4880382775119617
+      ]
+    },
+    {
+      "id": "steam_controller/018",
+      "label": "left stick L click",
+      "row": 3,
+      "column": 0,
+      "rect": [
+        45,
+        648,
+        151,
+        148
+      ],
+      "uv_top_left": [
+        0.03588516746411483,
+        0.5167464114832536,
+        0.15629984051036683,
+        0.6347687400318979
+      ]
+    },
+    {
+      "id": "steam_controller/019",
+      "label": "left stick L up",
+      "row": 3,
+      "column": 1,
+      "rect": [
+        251,
+        647,
+        150,
+        148
+      ],
+      "uv_top_left": [
+        0.20015948963317384,
+        0.5159489633173844,
+        0.3197767145135566,
+        0.6339712918660287
+      ]
+    },
+    {
+      "id": "steam_controller/020",
+      "label": "left stick L down",
+      "row": 3,
+      "column": 2,
+      "rect": [
+        450,
+        647,
+        149,
+        146
+      ],
+      "uv_top_left": [
+        0.3588516746411483,
+        0.5159489633173844,
+        0.47767145135566186,
+        0.6323763955342903
+      ]
+    },
+    {
+      "id": "steam_controller/021",
+      "label": "left stick L left",
+      "row": 3,
+      "column": 3,
+      "rect": [
+        651,
+        647,
+        151,
+        149
+      ],
+      "uv_top_left": [
+        0.5191387559808612,
+        0.5159489633173844,
+        0.6395534290271132,
+        0.6347687400318979
+      ]
+    },
+    {
+      "id": "steam_controller/022",
+      "label": "left stick L right",
+      "row": 3,
+      "column": 4,
+      "rect": [
+        852,
+        647,
+        152,
+        149
+      ],
+      "uv_top_left": [
+        0.6794258373205742,
+        0.5159489633173844,
+        0.8006379585326954,
+        0.6347687400318979
+      ]
+    },
+    {
+      "id": "steam_controller/023",
+      "label": "left stick L horizontal double arrow",
+      "row": 3,
+      "column": 5,
+      "rect": [
+        1055,
+        652,
+        151,
+        142
+      ],
+      "uv_top_left": [
+        0.8413078149920256,
+        0.5199362041467305,
+        0.9617224880382775,
+        0.6331738437001595
+      ]
+    },
+    {
+      "id": "steam_controller/024",
+      "label": "left trackpad up",
+      "row": 4,
+      "column": 0,
+      "rect": [
+        51,
+        841,
+        150,
+        149
+      ],
+      "uv_top_left": [
+        0.04066985645933014,
+        0.6706539074960127,
+        0.16028708133971292,
+        0.7894736842105263
+      ]
+    },
+    {
+      "id": "steam_controller/025",
+      "label": "left trackpad down",
+      "row": 4,
+      "column": 1,
+      "rect": [
+        251,
+        840,
+        151,
+        149
+      ],
+      "uv_top_left": [
+        0.20015948963317384,
+        0.6698564593301436,
+        0.32057416267942584,
+        0.7886762360446571
+      ]
+    },
+    {
+      "id": "steam_controller/026",
+      "label": "left trackpad left",
+      "row": 4,
+      "column": 2,
+      "rect": [
+        450,
+        840,
+        152,
+        150
+      ],
+      "uv_top_left": [
+        0.3588516746411483,
+        0.6698564593301436,
+        0.4800637958532695,
+        0.7894736842105263
+      ]
+    },
+    {
+      "id": "steam_controller/027",
+      "label": "left trackpad right",
+      "row": 4,
+      "column": 3,
+      "rect": [
+        650,
+        840,
+        151,
+        150
+      ],
+      "uv_top_left": [
+        0.518341307814992,
+        0.6698564593301436,
+        0.638755980861244,
+        0.7894736842105263
+      ]
+    },
+    {
+      "id": "steam_controller/028",
+      "label": "left trackpad horizontal swipe",
+      "row": 4,
+      "column": 4,
+      "rect": [
+        852,
+        841,
+        152,
+        151
+      ],
+      "uv_top_left": [
+        0.6794258373205742,
+        0.6706539074960127,
+        0.8006379585326954,
+        0.7910685805422647
+      ]
+    },
+    {
+      "id": "steam_controller/029",
+      "label": "left trackpad vertical swipe",
+      "row": 4,
+      "column": 5,
+      "rect": [
+        1053,
+        841,
+        153,
+        149
+      ],
+      "uv_top_left": [
+        0.8397129186602871,
+        0.6706539074960127,
+        0.9617224880382775,
+        0.7894736842105263
+      ]
+    },
+    {
+      "id": "steam_controller/030",
+      "label": "right trackpad up",
+      "row": 5,
+      "column": 0,
+      "rect": [
+        50,
+        1038,
+        150,
+        146
+      ],
+      "uv_top_left": [
+        0.03987240829346093,
+        0.8277511961722488,
+        0.1594896331738437,
+        0.9441786283891547
+      ]
+    },
+    {
+      "id": "steam_controller/031",
+      "label": "right trackpad down",
+      "row": 5,
+      "column": 1,
+      "rect": [
+        249,
+        1035,
+        152,
+        149
+      ],
+      "uv_top_left": [
+        0.19856459330143542,
+        0.8253588516746412,
+        0.3197767145135566,
+        0.9441786283891547
+      ]
+    },
+    {
+      "id": "steam_controller/032",
+      "label": "right trackpad left",
+      "row": 5,
+      "column": 2,
+      "rect": [
+        450,
+        1036,
+        152,
+        149
+      ],
+      "uv_top_left": [
+        0.3588516746411483,
+        0.8261562998405104,
+        0.4800637958532695,
+        0.9449760765550239
+      ]
+    },
+    {
+      "id": "steam_controller/033",
+      "label": "right trackpad right",
+      "row": 5,
+      "column": 3,
+      "rect": [
+        650,
+        1035,
+        151,
+        149
+      ],
+      "uv_top_left": [
+        0.518341307814992,
+        0.8253588516746412,
+        0.638755980861244,
+        0.9441786283891547
+      ]
+    },
+    {
+      "id": "steam_controller/034",
+      "label": "right trackpad horizontal swipe",
+      "row": 5,
+      "column": 4,
+      "rect": [
+        851,
+        1035,
+        152,
+        150
+      ],
+      "uv_top_left": [
+        0.6786283891547049,
+        0.8253588516746412,
+        0.7998405103668261,
+        0.9449760765550239
+      ]
+    },
+    {
+      "id": "steam_controller/035",
+      "label": "right trackpad vertical swipe",
+      "row": 5,
+      "column": 5,
+      "rect": [
+        1054,
+        1036,
+        151,
+        148
+      ],
+      "uv_top_left": [
+        0.8405103668261563,
+        0.8261562998405104,
+        0.9609250398724083,
+        0.9441786283891547
+      ]
+    }
+  ]
+}

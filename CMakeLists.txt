@@ -233,6 +233,10 @@ add_subdirectory(canis)
 add_subdirectory(game)
 
 if(NOT CANIS_PLATFORM_WEB)
+  # The desktop runtime loads GameCode dynamically, so linking alone does not
+  # ensure that building the executable also builds its gameplay scripts.
+  add_dependencies(${PROJECT_NAME} GameCode)
+
   # Keep staged desktop packages relocatable: the executable, engine, and game
   # module live beside one another and resolve libraries relative to $ORIGIN.
   set_target_properties(${PROJECT_NAME} CanisEngine GameCode PROPERTIES
@@ -244,4 +248,18 @@ endif()
 
 if(CANIS_PLATFORM_WEB)
   target_link_libraries(${PROJECT_NAME} PRIVATE GameCode)
+endif()
+
+# Instrument engine and its consumers, while leaving third-party libraries unchanged.
+option(CANIS_ENABLE_SANITIZERS "Enable address/undefined behavior checks for Canis and gameplay" OFF)
+if(CANIS_ENABLE_SANITIZERS)
+  if(CANIS_PLATFORM_WEB OR NOT CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    message(FATAL_ERROR "Canis sanitizers require a native GCC/Clang build")
+  endif()
+  target_compile_options(CanisEngine PUBLIC -fsanitize=address,undefined -fno-omit-frame-pointer)
+  target_link_options(CanisEngine PUBLIC -fsanitize=address,undefined)
+  # Jolt is built without C++ RTTI; instrument its bridge except vptr checks.
+  set_property(SOURCE "${CMAKE_SOURCE_DIR}/canis/src/ECS/Systems/JoltPhysics3DSystem.cpp"
+    "${CMAKE_SOURCE_DIR}/canis/src/ECS/Systems/MeshRenderer3DSystem.cpp"
+    DIRECTORY "${CMAKE_SOURCE_DIR}/canis" APPEND PROPERTY COMPILE_OPTIONS -fno-sanitize=vptr)
 endif()
